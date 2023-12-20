@@ -10,14 +10,14 @@ else
     echo "You are root user"
 fi # fi means reverse of if, indicating condition end
 
-yum install mysql -y
+yum install tree -y
 
 if [ $? -ne 0 ]
 then
-    echo "ERROR:: Installing MySQL is failed"
+    echo "ERROR:: Installing tree is failed"
     exit 1
 else
-    echo "Installing MySQL is SUCCESS"
+    echo "Installing tree is SUCCESS"
 fi
 
 yum install git -y
